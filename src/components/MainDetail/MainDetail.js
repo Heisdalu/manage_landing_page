@@ -1,4 +1,5 @@
 import "./MainDetail.css";
+import PatternImg from "../../assets/bg-tablet-pattern.svg";
 import OurService from "./OurService";
 
 const MainDetail = () => {

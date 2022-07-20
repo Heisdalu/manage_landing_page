@@ -17,17 +17,22 @@ const Header = () => {
         <section className="header_main">
           <figure className="header_illustrations">
             <img src={PatternImg} alt="" className="other" />
-            {/* <img src={PatternImg} alt="" className="other2" /> */}
             <img src={Lg} alt="" className="main_ill" />
           </figure>
-          <div className='header_content'>
-            <h1 className='header_title'>Bring everyone together to build better products.</h1>
-            <p className='header_detail'>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+          <div className="header_content">
+            <h1 className="header_title">
+              Bring everyone together to build better products.
+            </h1>
+            <p className="header_detail">
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
+            </p>
 
-
-            <button className='header_btn'>Get Started</button>
+            <button className="header_btn">Get Started</button>
           </div>
-
+          <div className="class">
+            <img src={PatternImg} alt="" className="other3" />
+          </div>
         </section>
       </header>
     </div>

@@ -3,15 +3,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 2rem 1rem; */
+  overflow: hidden;
+  position: relative;
 }
 
 .about_manage {
-  margin: 2rem 0;
-  /* text-align: center; */
+  margin-bottom: 2rem;
   max-width: 350px;
   text-align: center;
   border: 1px solid;
+  z-index: 1;
 }
 
 .main_header {
