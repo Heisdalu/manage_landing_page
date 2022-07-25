@@ -1,0 +1,136 @@
+.info-header {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--primary-bright-red);
+}
+
+.info-title {
+  max-width: 270px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  /* padding: 1rem 0; */
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+
+.info-header button {
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-family: var(--font);
+  font-weight: 600;
+  border: none;
+  color: var(--primary-bright-red);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.footer {
+  background-color: var(--primary-bright-red);
+  background-color: var(--very-dark-Blue);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.input-text {
+  padding: 1rem 1.2rem;
+  width: 70%;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+}
+
+.input-text::placeholder{
+  font-size: 0.9rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+
+.go_btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  margin-left: auto;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--primary-bright-red);
+  color: #ffffff;
+  font-weight: 500;
+  font-family: var(--font);
+}
+
+.navigation_links{
+  display: flex;
+  width: 100%;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.navigation_main{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+}
+
+.navigation_main a {
+  padding: 1rem 0;
+  color: #ffffff;
+  text-decoration: none;
+  color: var(--vary-light-gray);
+}
+
+.navigation_other{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation_other a {
+  padding: 1rem 0;
+  color: hsl(0, 0%, 98%);
+  font-weight: 500;
+  color: var(--vary-light-gray);
+  text-decoration: none;
+}
+
+.social_link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.social_media_links{
+  margin: 3rem 0;
+  margin-top: 0;
+}
+
+.social_link img {
+  height: 30px;
+  margin-left: 1.5rem;
+}
+
+.copyright{
+  color: var(--dark-grayish-blue);
+  margin: 1.5rem 0;
+  word-spacing: 3px;
+  font-size: 1rem;
+}
