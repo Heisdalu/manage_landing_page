@@ -1,0 +1,43 @@
+.desktop_header,
+.desktop_navigator_btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop_header {
+    display: block;
+    margin: 0 auto;
+    z-index: 11;
+  }
+
+  .desktop_header a {
+    margin-right: 2vw;
+    color: var(--primary-dark-blue);
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+  }
+
+  .desktop_header a:hover {
+    color: rgb(213, 206, 206);
+    cursor: pointer;
+  }
+
+  .desktop_navigator_btn {
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    z-index: 11;
+    background-color: var(--primary-bright-red);
+    color: #ffffff;
+    font-family: var(--font);
+    font-size: 1rem;
+    border: none;
+  }
+
+  .desktop_navigator_btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: 0 7px 15px var(--primary-bright-red);
+  }
+}

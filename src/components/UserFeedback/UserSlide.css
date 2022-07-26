@@ -1,29 +1,28 @@
-.user_feedback{
-  border: 1px solid;
+.user_feedback {
   position: absolute;
   width: 100%;
   scroll-snap-align: center;
   height: 300px;
   background-color: var(--vary-light-gray);
   border-radius: 5px;
-  
 }
 
-.second{
+.second {
   transform: translateX(110%);
 }
 
-.third{
+.third {
   transform: translateX(220%);
 }
 
-.four{
-    transform: translateX(330%);
+.four {
+  transform: translateX(330%);
 }
 
 .user_pic {
   height: 100px;
   transform: translateY(-50%);
+  height: 80px;
 }
 
 .user_pic img {
@@ -43,4 +42,17 @@
   line-height: 1.8rem;
   font-size: 1rem;
   color: var(--dark-grayish-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .user_feedback {
+    width: 500px;
+    height: 250px;
+    padding: 0 2rem;
+    bottom: 50px;
+  }
+
+  .slider_counter{
+    display: none;
+  }
 }

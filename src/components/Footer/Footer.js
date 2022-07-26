@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Footer.css";
-import Facebook from '../../assets/icon-facebook.svg'
-import Pinterest from '../../assets/icon-pinterest.svg'
-import Twitter from '../../assets/icon-twitter.svg'
-import Youtube from '../../assets/icon-youtube.svg'
-import Instagram from '../../assets/icon-instagram.svg'
+import Facebook from "../../assets/icon-facebook.svg";
+import Pinterest from "../../assets/icon-pinterest.svg";
+import Twitter from "../../assets/icon-twitter.svg";
+import Youtube from "../../assets/icon-youtube.svg";
+import Instagram from "../../assets/icon-instagram.svg";
 import Logo from "../Header/Logo";
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
             type="text"
             aria-label="update inbox"
             placeholder="Updates in your inbox..."
-            className='input-text'
+            className="input-text"
           />
           <button type="submit" className="go_btn">
             GO
@@ -50,11 +50,12 @@ const Footer = () => {
             <img src={Pinterest} alt="pinterest icon" />
             <img src={Instagram} alt="instagram icon" />
           </div>
-
-          <Logo color="#ffffff" />
         </section>
+        <span className='footer_logo'>
+          <Logo color="#ffffff" />
+        </span>
 
-        <div className="copyright">Copyright 2020.  All Rights Reserved.</div>
+        <div className="copyright">Copyright 2020. All Rights Reserved.</div>
       </footer>
     </>
   );

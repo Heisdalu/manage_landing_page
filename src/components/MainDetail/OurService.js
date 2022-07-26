@@ -4,6 +4,7 @@ const OurService = () => {
   return (
     <div className="main_detail">
       <section className="main_detail_section">
+        <span className="num">01</span>
         <h1 className="main_detail_title one">Track company-wide progress</h1>
 
         <p className="main_detail_content">
@@ -14,6 +15,8 @@ const OurService = () => {
       </section>
 
       <section className="main_detail_section">
+        <span className="num">02</span>
+
         <h1 className="main_detail_title two">Advanced built-in reports</h1>
 
         <p className="main_detail_content">
@@ -24,6 +27,8 @@ const OurService = () => {
       </section>
 
       <section className="main_detail_section">
+        <span className="num">03</span>
+
         <h1 className="main_detail_title three">
           Everything you need in one place
         </h1>

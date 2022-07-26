@@ -1,5 +1,4 @@
 .feedback_main {
-  /* border: 1px solid red; */
   margin: 2rem 0;
   text-align: center;
   padding: 0 1rem;
@@ -8,20 +7,19 @@
 .feedback_header {
   font-size: 2rem;
   padding: 2rem 0;
+  color: var(--primary-dark-blue);
 }
 
 .feedback_content {
-  border: 1px solid #ff0000;
   display: flex;
   justify-content: center;
-  max-width: 100rem;
   position: relative;
   height: 24rem;
   overflow: scroll;
+  overflow-y: hidden;
 }
 
 .user_feedback {
-  border: 1px solid;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -86,4 +84,16 @@
   border: none;
   font-family: var(--font);
   font-size: 0.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback_content {
+    justify-content: normal;
+  }
+
+  .get-started_btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    box-shadow: 0 7px 15px var(--primary-bright-red);
+  }
 }
