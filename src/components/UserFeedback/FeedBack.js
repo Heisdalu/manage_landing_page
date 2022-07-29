@@ -1,59 +1,72 @@
 import "./FeedBack.css";
-import ali_pic from "../../assets/avatar-ali.png";
-import anisha_pic from "../../assets/avatar-anisha.png";
-import richard_pic from "../../assets/avatar-richard.png";
-import shanai_pic from "../../assets/avatar-shanai.png";
-import UserSlide from "./UserSlide";
+import { useRef } from "react";
+import Slider from "./Slider";
 
 const FeedBack = () => {
-  const lol = (e) => {
-    console.log(e.target.getBoundingClientRect());
+  const mainSliderRef = useRef();
+  const innerSliderRef = useRef();
+
+  let pressed = false;
+  let x;
+  let startX;
+
+  // get the postion of the mouse when clicked
+  const mouseActiveHandler = (e) => {
+    console.log(e);
+    mainSliderRef.current.style.cursor = "grabbing";
+    pressed = true;
+    // get the starting point on the slider when clicked
+    startX = e.nativeEvent.offsetX - innerSliderRef.current.offsetLeft;
+  };
+
+  // get the mouse moving direction
+  const mouseMovingHandler = (e) => {
+    e.preventDefault();
+    if (!pressed) return;
+    // as mouse moves, subtract mouse position from mouse initial click
+    x = e.nativeEvent.offsetX - startX;
+    innerSliderRef.current.style.left = `${x}px`;
+    boundaries(x);
+  };
+
+  const mouseNotActiveHandler = () => {
+    mainSliderRef.current.style.cursor = "grab";
+    pressed = false;
+  };
+
+  const boundaries = (value) => {
+    const inner = innerSliderRef.current.getBoundingClientRect();
+    const outer = mainSliderRef.current.getBoundingClientRect();
+    // prevent slider from moving when there is no element on the left
+    if (value > 0) {
+      innerSliderRef.current.style.left = "0";
+    }
+    // prevent slider from moving when there is no element on the right
+    if (outer.right > inner.right) {
+      console.log(inner.width - outer.width);
+      innerSliderRef.current.style.left = `-${inner.width - outer.width}px`;
+    }
   };
 
   return (
     <section className="feedback_main">
       <h1 className="feedback_header">What they've said</h1>
 
-      <div className="slider">
-        <div className="feedback_content" onScroll={lol}>
-          <UserSlide
-            class="first"
-            image={anisha_pic}
-            name="Anisha Li"
-            content={`"Manage has superchanged our team's workflow. The ability to maintain visibilty on larger milestones at all times keeps everyone motivated."`}
-          />
-
-          <UserSlide
-            class="second"
-            image={ali_pic}
-            name="Ali Bravo"
-            content="We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
-              everyone is much more focused."
-          />
-
-          <UserSlide
-            class="third"
-            image={richard_pic}
-            name="Richard Watts"
-            content={`"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!"`}
-          />
-
-          <UserSlide
-            class="four"
-            image={shanai_pic}
-            name="Richard Watts"
-            content={`"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive."`}
-          />
+      <div
+        className="slider"
+        onMouseDown={mouseActiveHandler}
+        onMouseUp={mouseNotActiveHandler}
+        onMouseMove={mouseMovingHandler}
+        ref={mainSliderRef}
+      >
+        <div
+          className="feedback_content feedback_content_desktop"
+          ref={innerSliderRef}
+        >
+          <Slider />
         </div>
-        <div className="slider_counter">
-          <div className="slider-counter-box active"></div>
-          <div className="slider-counter-box"></div>
-          <div className="slider-counter-box"></div>
-          <div className="slider-counter-box"></div>
-        </div>
-        <button className="get-started_btn">Get started</button>
       </div>
+      <button className="get-started_btn">Get started</button>
     </section>
   );
 };

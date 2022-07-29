@@ -19,6 +19,16 @@
   transform: translateX(330%);
 }
 
+@media (hover:hover) {
+  .second, .third, .four {
+    transform: translateX(0);
+  }
+
+  .user_feedback{
+    position: static;
+  }
+}
+
 .user_pic {
   height: 100px;
   transform: translateY(-50%);
