@@ -1,0 +1,23 @@
+
+.modal_container{
+    position: fixed;
+    z-index: 2;
+    width: 90%;
+    top: 100px;
+    align-items: center;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0 183px 50px rgba(0, 0, 0, 0.341);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+}
+
+.modal_container a {
+    margin: 0.7rem 0;
+    text-decoration: none;
+    color: var(--primary-dark-blue);
+    font-weight: 500;
+}
