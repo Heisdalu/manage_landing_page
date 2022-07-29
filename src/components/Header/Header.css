@@ -90,13 +90,14 @@
 
 .class {
   display: flex;
-  margin-top: -250px;
+  margin-top: -300px;
+  position: absolute;
 }
 
 .other3 {
   width: 300px;
   margin-left: auto;
-  transform: translateX(60%);
+  transform: translateX(70%);
 }
 
 @media screen and (min-width: 508px) {
@@ -106,6 +107,7 @@
 }
 
 @media screen and (min-width: 768px) {
+ 
   .header_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -165,6 +167,9 @@
 }
 
 @media screen and (min-width: 1008px) {
+   .header{
+    padding: 1rem 2rem;
+  }
   .other {
     width: 600px;
   }

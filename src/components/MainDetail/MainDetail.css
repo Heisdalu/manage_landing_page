@@ -36,6 +36,15 @@
     padding: 3rem 0;
   }
 
+  .main::after {
+    content: url('../../assets/bg-tablet-pattern.svg');
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    transform: translate(-150%, 130%);
+
+  }
   .about_manage {
     max-width: none;
     text-align: left;
