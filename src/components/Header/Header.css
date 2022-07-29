@@ -23,10 +23,10 @@
   z-index: 1;
 }
 
-.header_illustrations {
+/* .header_illustrations {
   display: flex;
   justify-content: center;
-}
+} */
 
 .other {
   position: absolute;
@@ -44,6 +44,7 @@
 .main_ill {
   z-index: 1;
   max-width: 300px;
+  position: relative;
 }
 
 .header_content {
