@@ -8,6 +8,8 @@ import Instagram from "../../assets/icon-instagram.svg";
 import Logo from "../Header/Logo";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <>
       <section className="info-header">
@@ -55,7 +57,7 @@ const Footer = () => {
           <Logo color="#ffffff" />
         </span>
 
-        <div className="copyright">Copyright 2020. All Rights Reserved.</div>
+        <div className="copyright">Copyright {year}. All Rights Reserved.</div>
       </footer>
     </>
   );

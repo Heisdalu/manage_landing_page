@@ -92,12 +92,13 @@
   display: flex;
   margin-top: -300px;
   position: absolute;
+  right: 0;
 }
 
 .other3 {
   width: 300px;
   margin-left: auto;
-  transform: translateX(70%);
+  transform: translateX(50%);
 }
 
 @media screen and (min-width: 508px) {
