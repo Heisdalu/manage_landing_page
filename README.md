@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-- I figured out how to target hover device with media query. It is used convienenty to target device with ability to hover an element.
+- I figured out how to target hover device with media query. It is used conveniently to target device with ability to hover over an element.
 - Learnt about draggable slider. 
 
 
