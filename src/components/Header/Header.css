@@ -20,6 +20,7 @@
   margin-left: auto;
   background: none;
   border: none;
+  outline: none;
   z-index: 1;
 }
 
@@ -86,19 +87,21 @@
   color: var(--very-pale-red);
   border: none;
   z-index: 1;
+  outline: none;
+  border: none;
 }
 
 .class {
   display: flex;
-  margin-top: -300px;
   position: absolute;
   right: 0;
+  bottom: 0;
 }
 
 .other3 {
   width: 300px;
-  margin-left: auto;
-  transform: translateX(50%);
+  position: relative;
+  left: 50%;
 }
 
 @media screen and (min-width: 508px) {
@@ -108,7 +111,6 @@
 }
 
 @media screen and (min-width: 768px) {
- 
   .header_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,7 +161,7 @@
     text-align: left;
     max-width: 400px;
   }
-  
+
   .header_btn:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -168,7 +170,7 @@
 }
 
 @media screen and (min-width: 1008px) {
-   .header{
+  .header {
     padding: 1rem 2rem;
   }
   .other {

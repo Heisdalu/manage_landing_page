@@ -10,10 +10,9 @@
   color: var(--primary-dark-blue);
 }
 
-.slider{
+.slider {
   cursor: grab;
 }
-
 
 .feedback_content {
   display: flex;
@@ -29,14 +28,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-column-gap: 1rem;
-  
 }
 
-
-
-@media (hover:hover) {
-
-  .feedback_content_desktop{
+@media (hover: hover) {
+  .feedback_content_desktop {
     user-select: none;
     position: absolute;
     scroll-snap-type: none;
@@ -44,13 +39,12 @@
     z-index: -1;
     transition: left 1s;
   }
-  
-  .slider{
+
+  .slider {
     position: relative;
     overflow: hidden;
     height: 400px;
   }
-
 }
 
 .second {
@@ -112,6 +106,8 @@
   border: none;
   font-family: var(--font);
   font-size: 0.875rem;
+  outline: none;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
